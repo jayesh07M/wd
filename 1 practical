@@ -1,0 +1,14 @@
+<!DOCTYPE>
+         	<html>
+         	<head>
+ 	        <title>PersonalDetails</title>
+         	</head>
+         	<body>
+        	<h1>PersonalDetails</h1>
+        	<p><b>Name:</b>Jayesh Mahajan</p>
+        	<p><i>Department:</i>ComputerEngineering</p>
+        	<p><u>College:</u>XYZEngineeringCollege</p>
+        	<p><strong>Email:</strong>student@gmail.com</p>
+        	<p><em>ContactNo:</em>9876543210</p>
+       	</body>
+       	</html>
