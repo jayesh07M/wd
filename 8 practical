@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+
+    <script>
+        function calculate() {
+
+            // Read input values
+            var num1 = parseFloat(document.getElementById("n1").value);
+            var num2 = parseFloat(document.getElementById("n2").value);
+            var op = document.getElementById("operator").value;
+
+            var result;
+
+            // Perform operation using switch case
+            switch (op) {
+
+                case "+":
+                    result = num1 + num2;
+                    break;
+
+                case "-":
+                    result = num1 - num2;
+                    break;
+
+                case "*":
+                    result = num1 * num2;
+                    break;
+
+                case "/":
+
+                    // Check division by zero
+                    if (num2 == 0) {
+                        alert("Division by zero not allowed");
+                        return;
+                    }
+
+                    result = num1 / num2;
+                    break;
+
+                default:
+                    alert("Invalid operator");
+                    return;
+            }
+
+            // Display result
+            document.getElementById("result").value = result;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    Number 1:
+    <input type="text" id="n1">
+    <br><br>
+
+    Number 2:
+    <input type="text" id="n2">
+    <br><br>
+
+    Operator:
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="calculate()">
+        Calculate
+    </button>
+
+    <br><br>
+
+    Result:
+    <input type="text" id="result" readonly>
+
+</body>
+
+</html>
