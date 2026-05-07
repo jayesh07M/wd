@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Content using DOM</title>
+
+    <script>
+        function changeContent() {
+
+            // Access element using DOM and change text
+            document.getElementById("message").innerHTML =
+                "Welcome! Content updated using JavaScript DOM.";
+
+            // Change style dynamically
+            document.getElementById("message").style.color = "blue";
+            document.getElementById("message").style.fontSize = "24px";
+
+            // Display current date and time
+            document.getElementById("time").innerHTML =
+                "Current Date & Time: " + new Date();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>JavaScript DOM Example</h2>
+
+    <p id="message">
+        Click the button to change this text.
+    </p>
+
+    <p id="time"></p>
+
+    <button onclick="changeContent()">
+        Click Me
+    </button>
+
+</body>
+</html>
