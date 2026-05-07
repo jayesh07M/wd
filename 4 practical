@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Types Practical</title>
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            background-color: #f9f9f9;
+        }
+
+        th {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: green; text-align: center;">
+        Student Details
+    </h1>
+
+    <!-- External CSS applied -->
+    <h2>Department Information</h2>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Pooja</td>
+            <td>BSc CS</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>BSc IT</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
